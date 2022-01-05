@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login";
-import Registering from "./Registering";
-import Habits from "./Habits";
+import Registering from "./Register";
+import Habits from "./Habits/Habits";
 import Today from "./Today";
 import History from "./History";
 
