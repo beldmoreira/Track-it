@@ -1,19 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./Login";
-import Registering from "./Register";
-import Habits from "./Habits/Habits";
-import Today from "./Today";
-import History from "./History";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Habits from "./components/Habits";
+import Today from "./components/Today";
+import History from "./components/History";
 
 
 export default function App() {
       
     return (
       <BrowserRouter>
-        <Navbar />
-        <Routes>
+          <Routes>
           <Route path="/" element={<Login/>} />
-          <Route path="/cadastro" element={<Registering/>} />
+          <Route path="/cadastro" element={<Register/>} />
           <Route path="/habitos" element={<Habits/>}/>
           <Route path="/hoje" element={<Today/>} />
           <Route path="/historico" element={<History/>} />
