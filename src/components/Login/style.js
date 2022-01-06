@@ -14,6 +14,7 @@ const Container = styled.div`
 
 const StyledLink = styled(Link)`
 height: 17px;
+margin-top: 25px;
 display: flex;
 justify-content: center;
 align-items: center;
