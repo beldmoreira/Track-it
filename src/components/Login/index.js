@@ -30,7 +30,7 @@ export default function Login({setUser, setToken}){
       <Loader type="ThreeDots" color="#FFFFFF" height={80} width={80} />)
       navigate('/hoje')
     });
-    promise.catch(error => console.log(error.response));
+    promise.catch(error => alert("Confira seus dados"));
   }
 return(
     <>
