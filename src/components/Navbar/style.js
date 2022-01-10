@@ -14,5 +14,19 @@ svg{
     width: 100%;
 }
 `;
+const UserInfo = styled.div `
+width: 51px;
+height: 51px;
+background-color:#FFFFFF;
 
-export default TopBar;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+`;
+
+export {
+    TopBar,
+    UserInfo
+}

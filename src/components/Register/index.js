@@ -30,7 +30,7 @@ export default function Register({setUser, setToken}){
         setToken(response.data.token);
         setLoadingButton(
             <Loader type="ThreeDots" color="#FFFFFF" height={80} width={80} />)
-        navigate('/habitos')
+        navigate('/')
       });
       promise.catch(error => alert("Confira se todos os campos foram preenchidos e reveja os dados informados"));
     }
