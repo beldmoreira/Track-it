@@ -12,6 +12,7 @@ export default function Register({setUser, setToken}){
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
     const [image, setImage] = useState('');
+    const [loadingButton, setLoadingButton] = useState('');
     const navigate = useNavigate();
 
 
@@ -27,6 +28,8 @@ export default function Register({setUser, setToken}){
     promise.then(response => {
         setUser(response.data);
         setToken(response.data.token);
+        setLoadingButton(
+            <Loader type="ThreeDots" color="#FFFFFF" height={80} width={80} />)
         navigate('/habitos')
       });
       promise.catch(error => console.log(error.response));
@@ -39,8 +42,8 @@ return(
             <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" />
             <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="senha" />
             <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="nome" />
-            <Input type="text" value={image} onChange={(e) => setImage(e.target.value)} placeholder="foto" />
-            <BiggerButton type="submit"> Cadastrar </BiggerButton>
+            <Input type="photo" value={image} onChange={(e) => setImage(e.target.value)} placeholder="foto" />
+            <BiggerButton type="submit"> Cadastrar {loadingButton} </BiggerButton>
         </form>
         <StyledLink to="/"> Já tem uma conta? Faça login!</StyledLink>
     </Container>
