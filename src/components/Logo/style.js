@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   padding: 41px 0;
+  margin-bottom:32.62px;
   font-size: 64px;
   font-family: 'Pacifico', cursive;
   color: #ffffff;
@@ -11,15 +12,8 @@ const Container = styled.div`
 
   svg {
     position: relative;
-    bottom: -3px;
-    right: -5px;
-    width: 64px;
-    height: 64px;
-  }
-
-  .title {
-    position: relative;
-    left: -15px;
+    height: 178.38323974609375px;
+    width: 100%;
   }
 `;
 

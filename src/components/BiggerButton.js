@@ -6,6 +6,7 @@ const BiggerButton = styled.button`
   background-color: #52B6FF;
   color: #FFFFFF;
   font-family: 'Lexend Deca', sans-serif;
+  font-size:20,98px;
   padding: 14px;
   border-radius:4,64px;
   border: none;

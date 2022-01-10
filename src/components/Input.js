@@ -11,6 +11,7 @@ const Input = styled.input`
 
   ::placeholder {
     color:#DBDBDB;
+    font-size:19,98px;
     font-family: 'Lexend Deca', sans-serif;
   }
 `;

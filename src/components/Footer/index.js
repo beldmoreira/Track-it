@@ -1,44 +1,16 @@
-import styled from "styled-components";
+import Footer from './style';
 
 
 export default function Footer(){
     return(
         <>
     <Footer>
-        <HabitsSection> Hábitos </HabitsSection>
-        
-        <HistorySection>  </HistorySection>
+      <HabitsSection> Hábitos </HabitsSection>
+      <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="45.5" cy="45.5" r="45.5" fill="#52B6FF"/>
+        </svg>
+      <HabitsSection> Histórico </HabitsSection>
     </Footer>
-
         </>
     );
 }
-const Footer = styled.div `
-height: 70px;
-width: 375px;
-border-radius: 0px;
-background-color: #FFFFFF;
-
-`;
-const HabitsSection = styled.p `
-height: 22px;
-width: 68px;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;
-font-color: #52B6FF;
-`;
-const HistorySection=styled.p`
-height: 22px;
-width: 79px;
-font-family: Lexend Deca;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;
-`;
