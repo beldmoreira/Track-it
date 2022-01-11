@@ -6,6 +6,8 @@ import Habits from "./components/Habits";
 import Today from "./components/Today";
 import History from "./components/History";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
 
 
 export default function App() {
@@ -13,6 +15,7 @@ export default function App() {
   const [user, setUser] = useState(null);
     return (
       <BrowserRouter>
+      <Navbar userInfo={userInfo}/>
           <Routes>
           <Route path="/" element={<Login setToken={setToken} setUser={setUser}/>} />
           <Route path="/cadastro" element={<Register/>} />
@@ -20,6 +23,7 @@ export default function App() {
           <Route path="/hoje" element={<Today/>} />
           <Route path="/historico" element={<History/>} />
         </Routes>
+        <Footer userInfo ={userInfo}/>
       </BrowserRouter>
     );
   }
